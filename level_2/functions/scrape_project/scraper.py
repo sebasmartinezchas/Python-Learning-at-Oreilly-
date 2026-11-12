@@ -31,7 +31,8 @@ def scrape_title(url):
         response=requests.get(url,timeout=5)
         response.raise_for_status() # RAises an HTTPError for bad responses
         soup=BeautifulSoup(response.text,"html.parser")
-        return soup.title.string
+        if soup.title is not None:
+         return soup.title.string
     except requests.RequestException as e:
         return f"Error: {e}"
 

@@ -1,11 +1,11 @@
-# Handle Mutabiility and Object references in Python 
-def create_shopping_list(items=[]):
+# Handle Mutabiility and Object references in Python
+def create_shopping_lista(items=[]):
     items.append("milk")
     return items
 
-monday_list=create_shopping_list()
-tuesday_list=create_shopping_list()
-wednesday_list=create_shopping_list()
+monday_list=create_shopping_lista()
+tuesday_list=create_shopping_lista()
+wednesday_list=create_shopping_lista()
 
 print("Monday's list:",monday_list)
 print("Tuesday's list:",tuesday_list)
@@ -70,7 +70,7 @@ print(a is d)
 # True
 # False
 
-# The [:] creates a new list object, so a and d are different objects.  
+# The [:] creates a new list object, so a and d are different objects.
 # Copy method is not a deep copy, it is a shallow copy.
 
 e=a.copy()
@@ -88,10 +88,10 @@ class ShoppingCart:
         if items is None:
             items = []
         self.items=items
-    
+
     def add_item(self,item):
         self.items.append(item)
-    
+
     def share_cart(self,other_cart) -> None:
         other_cart.items=self.items.copy() # This is a shallow copy of the items list. and it is ok for this case because the items list is not mutable.
         return other_cart
