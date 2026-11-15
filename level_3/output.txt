@@ -1,0 +1,3 @@
+None
+This will be written to the file 'output.txt'
+This is another line that will be written to the file.
