@@ -11,15 +11,15 @@ def myfunc():
 
 print(myfunc())
 
-def myfunc():
+def myfunc2():
     yield 1
     yield 2
     yield 3
 
 print(myfunc())
-# outputs: <generator object myfunc at 0x000001A4540273C0>  
+# outputs: <generator object myfunc at 0x000001A4540273C0>
 # This is a generator object -- it knows how to behave inside a for loop.
-# A generator is an iterator that can be used to iterate over a sequence 
+# A generator is an iterator that can be used to iterate over a sequence
 # of values.
 # A generator is created using the yield keyword.
 # A generator is a function that returns a generator object.
@@ -33,8 +33,8 @@ print(myfunc())
 # What can we do with a generator object? Put it into a for loop.!!!
 
 g=myfunc()
-for one_item in g:
-    print(one_item)
+# for one_item in g:
+#     print(one_item)
 # outputs: 1
 # 2
 # 3
@@ -50,38 +50,38 @@ The next iteration, then picks up right after the previous one.
     """
 
 
-def myfunc():
-    print("line 1")
-    yield 1
-    print("line 2")
-    yield 2
-    print("line 3")
-    yield 3
-    print("line 4")
-    yield 4
-    print("line 5")
-    yield 5
-    print("line 6")
-    yield 6
-    print("line 7")
-    yield 7
-    print("line 8")
-    yield 8
-g=myfunc()
-next(g) # low level iterator command -- give me your next value
-next(g)
-next(g)
-next(g)
-next(g)
-next(g)
-next(g)
-next(g)
-next(g)
-next(g)
-next(g)
-next(g)
-next(g)
-next(g) # StopIteration error -- no more values to iterate over
+# def myfunc():
+#     print("line 1")
+#     yield 1
+#     print("line 2")
+#     yield 2
+#     print("line 3")
+#     yield 3
+#     print("line 4")
+#     yield 4
+#     print("line 5")
+#     yield 5
+#     print("line 6")
+#     yield 6
+#     print("line 7")
+#     yield 7
+#     print("line 8")
+#     yield 8
+# g=myfunc()
+# next(g) # low level iterator command -- give me your next value
+# next(g)
+# next(g)
+# next(g)
+# next(g)
+# next(g)
+# next(g)
+# next(g)
+# next(g)
+# next(g)
+# next(g)
+# next(g)
+# next(g)
+# next(g) # StopIteration error -- no more values to iterate over
 
 def fib():
     first=0
@@ -131,4 +131,4 @@ def char_range(start,stop):
 for one_item in char_range("a","f"):
     print(one_item)
 
-# outputs: a b c d e 
+# outputs: a b c d e
