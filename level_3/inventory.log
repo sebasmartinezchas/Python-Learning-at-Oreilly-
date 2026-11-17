@@ -1,0 +1,2 @@
+2026-11-16 23:48:57,599 - WARNING -{"message": "Inventory low", "item_id": "ITEM-C", "stock_level": 0}
+2026-11-16 23:48:57,599 - ERROR -{"message": "Inventory out of stock", "item_id": "ITEM-C"}
