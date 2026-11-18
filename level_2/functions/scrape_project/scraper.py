@@ -21,18 +21,18 @@ Your Tasks:
 
  """
 
-import requests
-from bs4 import BeautifulSoup
+#import requests
+#from bs4 import BeautifulSoup
 
 
-def scrape_title(url):
-    """Scrapes the title from a fiven URL"""
-    try:
-        response=requests.get(url,timeout=5)
-        response.raise_for_status() # RAises an HTTPError for bad responses
-        soup=BeautifulSoup(response.text,"html.parser")
-        if soup.title is not None:
-         return soup.title.string
-    except requests.RequestException as e:
-        return f"Error: {e}"
+# def scrape_title(url):
+#     """Scrapes the title from a fiven URL"""
+#     try:
+#         response=requests.get(url,timeout=5)
+#         response.raise_for_status() # RAises an HTTPError for bad responses
+#         soup=BeautifulSoup(response.text,"html.parser")
+#         if soup.title is not None:
+#          return soup.title.string
+#     except requests.RequestException as e:
+#         return f"Error: {e}"
 

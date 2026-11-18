@@ -1,0 +1,6 @@
+2026-11-17 14:38:44,271 - WARNING -{"message": "Failed login attempt for user:", "username": "bob"}
+2026-11-17 14:38:44,271 - WARNING -{"message": "Failed login attempt for user:", "username": "charlie"}
+2026-11-17 14:38:44,271 - ERROR -{"message": "Login attempt on locked account:", "username": "charlie"}
+2026-11-17 14:42:47,038 - WARNING -{"message": "Failed login attempt for user:", "username": "bob"}
+2026-11-17 14:42:47,038 - WARNING -{"message": "Failed login attempt for user:", "username": "charlie"}
+2026-11-17 14:42:47,038 - ERROR -{"message": "Login attempt on locked account:", "username": "charlie"}
