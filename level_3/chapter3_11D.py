@@ -22,9 +22,10 @@ class TestFileManager(unittest.TestCase):
 
     @patch("builtins.open",new_callable=mock_open,read_data="  spaces  ")
     def test_read_data_strips_whitespace(self,mock_file):
-        result=self.file_manager.read_data
+        result=self.file_manager.read_data()
         self.assertEqual(result,"spaces")
 
-
+    # TODO: Add edge case tests (e.g., FileNotFoundError, empty files, encoding issues).
+    
 if __name__ == "__main__":
     unittest.main()
