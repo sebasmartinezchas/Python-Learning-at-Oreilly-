@@ -98,7 +98,7 @@ El context manager (`with`) llama automáticamente a `shutdown(wait=True)` al sa
 -   Preemptive multitasking → `threading`.
 -   True parallel execution on multiple CPU cores → `multiprocessing` (en el modelo convencional del curso).
 -   Automatically manages a pool of worker threads → `ThreadPoolExecutor`.
--   GIL: **bytecode**, **releases**, **overlap** (respuestas del cuestionario).
+
 
 ## 6. Aclaración sobre versiones modernas de Python
 
