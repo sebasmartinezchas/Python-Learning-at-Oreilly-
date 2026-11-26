@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+src/text_utils_sebaschas.egg-info/PKG-INFO
+src/text_utils_sebaschas.egg-info/SOURCES.txt
+src/text_utils_sebaschas.egg-info/dependency_links.txt
+src/text_utils_sebaschas.egg-info/top_level.txt
+src/textutils/__init__.py
+src/textutils/textutils.py
